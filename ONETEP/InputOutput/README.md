@@ -32,6 +32,7 @@ The .dat file must be present with the jobscript to be run.
 
 The lines specifying the ONETEP exectuable and launcher paths will be filesystem and compilation dependent:
 
+```
 Point this to your ONETEP executable.
 onetep_exe=\
 "/home/hpc/benchmarks-2022/ONETEP/source/bin/onetep.iridis5.intel21.omp.scalapack"
@@ -39,6 +40,7 @@ onetep_exe=\
 Point this to your ONETEP launcher.
 onetep_launcher=\
 "/home/hpc/benchmarks-2022/ONETEP/source/utils/onetep_launcher"
+```
 
 Please edit these to match your compiled ONETEP location
 
