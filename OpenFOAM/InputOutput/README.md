@@ -7,7 +7,7 @@ The repository provides the input data for three cases, small, medium and large.
 To run the Large case with OpenFOAM v10 run the scripts AllmeshL and Allrun in the following v8 location/directory:
 https://develop.openfoam.com/committees/hpc/-/tree/develop/HPC_motorbike/Large/v8
 
-To run this case, a Slurm job script is added to the case directory (the following example is for 40 processors on one compute node). The output from this run can be found in large-40.out and the time required for the benchamnrk result is the real time output found on **line 77** *135m59.644s* which then needs to be converted seconds.
+To run this case, a SLURM job script is added to the case directory (the following example is for 40 processors on one compute node). The output from this run can be found in large-40.out and the time required for the benchamnrk result is the real time output found on **line 77** *135m59.644s* which then needs to be converted seconds.
 
 ```shell
 #!/bin/bash
