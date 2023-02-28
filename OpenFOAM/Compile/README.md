@@ -2,7 +2,7 @@
 
 The [OpenFoam website](https://openfoam.org/download/10-source/) has good documentation for building the software from source but below is the procedure we used.
 
-```console
+```shell
 #Start by creating a directory where you want to build OF, and cd to it. Once in that directory, download the source distributions:
 wget -O - http://dl.openfoam.org/source/10 | tar xvz
 wget -O - http://dl.openfoam.org/third-party/10 | tar xvz
