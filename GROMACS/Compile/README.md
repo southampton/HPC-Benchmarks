@@ -2,7 +2,7 @@
 
 Below are the commands used to aquire and compile the GROMAX 2022 application. Included in this folder is a copy of the source gromacs-2022.3.tar.gz
 
-```console
+```shell
 mkdir 2022.3_mkl22
 
 cd 2022.3_mkl22

@@ -9,7 +9,7 @@ https://develop.openfoam.com/committees/hpc/-/tree/develop/HPC_motorbike/Large/v
 
 To run this case, a Slurm job script is added to the case directory (the following example is for 40 processors on one compute node). The output from this run can be found in large-40.out and the time required for the benchamnrk result is the real time output found on **line 77** *135m59.644s* which then needs to be converted seconds.
 
-```console
+```shell
 #!/bin/bash
 
 #SBATCH --job-name=motorbike
