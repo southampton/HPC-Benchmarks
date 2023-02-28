@@ -1,0 +1,99 @@
+Running SLURM prolog script on red465.cluster.local
+===============================================================================
+Job started on Fri Dec  9 12:05:32 GMT 2022
+Job ID          : 2244941
+Job name        : motorbike
+WorkDir         : /mainfs/home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+Command         : /mainfs/home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8/slurm-script
+Partition       : scavenger
+Num hosts       : 1
+Num cores       : 40
+Num of tasks    : 40
+Hosts allocated : red465
+Job Output Follows ...
+===============================================================================
+
+Lmod is automatically replacing "openmpi/4.0.5/gcc" with "openmpi/4.1.4/gcc".
+
+Running blockMesh on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+Running decomposePar on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+Running snappyHexMesh in parallel on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8 using 40 processes
+Running reconstructParMesh on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+Running reconstructPar on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+New entry pointAndNormalDict.basePoint ( 0 4 0 );
+
+Running mirrorMesh on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+New entry pointAndNormalDict.basePoint ( 0 12 0 );
+
+Running mirrorMesh on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+
+real	35m37.962s
+user	561m28.393s
+sys	3m49.705s
+rm: cannot remove 'log.simpleFoam': No such file or directory
+rm: cannot remove 'log.potentialFoam': No such file or directory
+Running decomposePar on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8
+Running potentialFoam in parallel on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8 using 40 processes
+Running simpleFoam in parallel on /home/hpc/benchmarks-2022/hpc-develop/HPC_motorbike/Large/v8 using 40 processes
+Using:
+  log      : log.simpleFoam
+  database : /mainfs/home/hpc/benchmarks-2022/OpenFOAM/10/source/OpenFOAM-10/bin/tools/foamLog.db
+  awk file : ./logs/foamLog.awk
+  files to : ./logs
+
+Executing: awk -f ./logs/foamLog.awk log.simpleFoam
+
+Generated XY files for:
+Separator
+Time
+Ux
+UxFinalRes
+UxIters
+Uy
+UyFinalRes
+UyIters
+Uz
+UzFinalRes
+UzIters
+clockTime
+contCumulative
+contGlobal
+contLocal
+executionTime
+k
+kAvg
+kFinalRes
+kIters
+kMax
+kMin
+omega
+omegaFinalRes
+omegaIters
+p
+pFinalRes
+pIters
+End
+
+real	135m59.644s
+user	4778m54.167s
+sys	56m11.481s
+==============================================================================
+Running epilogue script on red465.
+
+Submit time  : 2022-12-09T12:05:24
+Start time   : 2022-12-09T12:05:32
+End time     : 2022-12-09T14:57:10
+Elapsed time : 02:51:38 (Timelimit=04:00:00)
+
+Job ID: 2244941
+Cluster: i5
+User/Group: hpc/jf
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 40
+CPU Utilized: 3-18:00:24
+CPU Efficiency: 78.66% of 4-18:25:20 core-walltime
+Job Wall-clock time: 02:51:38
+Memory Utilized: 44.95 GB
+Memory Efficiency: 26.76% of 167.97 GB
+
