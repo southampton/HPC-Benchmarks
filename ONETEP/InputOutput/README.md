@@ -12,7 +12,7 @@ The input file is 4088.dat, listed in this directory
 
 ## Testcase 2:
 
-This testcase uses 2 MPI ranks per node with 20 OpenMPI threads per MPI rank, to populate the 40 CPUs per node on Iridis 5.
+This testcase uses 2 MPI ranks per node with 20 OpenMP threads per MPI rank, to populate the 40 CPUs per node on Iridis 5.
 
 The input file is sc05_protonated_shift.dat, listed in this directory
 
